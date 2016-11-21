@@ -10,7 +10,6 @@
             Console.WriteLine("Enter a number:");
             string currentNumber = Console.ReadLine();
             var sequence = new List<int>();
-            var nonNegativeSequence = new List<int>();
             var filteredSequence = new List<int>();
 
             while (currentNumber != string.Empty)

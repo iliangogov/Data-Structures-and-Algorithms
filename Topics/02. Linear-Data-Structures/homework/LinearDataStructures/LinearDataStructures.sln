@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RemoveNegativeNumbers", "Re
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RemoveOddTimesCount", "RemoveOddTimesCount\RemoveOddTimesCount.csproj", "{C8B0E1E9-C601-48F4-9FBF-C73113196D8D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OccurancesInArray", "OccurancesInArray\OccurancesInArray.csproj", "{752C50B0-A393-4EB6-8C4D-6F3DB79E68B5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{C8B0E1E9-C601-48F4-9FBF-C73113196D8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C8B0E1E9-C601-48F4-9FBF-C73113196D8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C8B0E1E9-C601-48F4-9FBF-C73113196D8D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{752C50B0-A393-4EB6-8C4D-6F3DB79E68B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{752C50B0-A393-4EB6-8C4D-6F3DB79E68B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{752C50B0-A393-4EB6-8C4D-6F3DB79E68B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{752C50B0-A393-4EB6-8C4D-6F3DB79E68B5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

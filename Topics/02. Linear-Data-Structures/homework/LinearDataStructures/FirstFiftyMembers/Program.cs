@@ -21,7 +21,6 @@
             queue.Enqueue(n);
             resultList.Add(n);
 
-            int index = 1;
             while (true)
             {
                 int current = queue.Dequeue();
@@ -32,7 +31,6 @@
                 }
 
                 queue.Enqueue(current + 1);
-                index++;
                 resultList.Add(current + 1);
 
                 if (resultList.Count == members)
@@ -41,7 +39,6 @@
                 }
 
                 queue.Enqueue((2 * current) + 1);
-                index++;
                 resultList.Add((2 * current) + 1);
 
                 if (resultList.Count == members)
@@ -50,7 +47,6 @@
                 }
 
                 queue.Enqueue(current + 2);
-                index++;
                 resultList.Add(current + 2);
 
                 if (resultList.Count == members)

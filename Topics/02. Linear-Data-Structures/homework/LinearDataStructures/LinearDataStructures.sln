@@ -29,6 +29,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "12.StackImplementation", "1
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "13.QueueImplementation", "QueueImplementation\13.QueueImplementation.csproj", "{83F99122-7626-4A4A-90D0-CACDFED6BE6E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "14.Labirynth", "Labirynth\14.Labirynth.csproj", "{677C0EE7-ECD3-40E1-8831-B13155EB1F1F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +89,10 @@ Global
 		{83F99122-7626-4A4A-90D0-CACDFED6BE6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{83F99122-7626-4A4A-90D0-CACDFED6BE6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{83F99122-7626-4A4A-90D0-CACDFED6BE6E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{677C0EE7-ECD3-40E1-8831-B13155EB1F1F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{677C0EE7-ECD3-40E1-8831-B13155EB1F1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{677C0EE7-ECD3-40E1-8831-B13155EB1F1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{677C0EE7-ECD3-40E1-8831-B13155EB1F1F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

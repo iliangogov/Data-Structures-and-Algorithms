@@ -1,13 +1,13 @@
-﻿using System;
-using System.Text;
-
-namespace Pattern
+﻿namespace Pattern
 {
+    using System;
+    using System.Text;
+
     public class Program
     {
         private static string pattern = "urd";
 
-        static void Main()
+        public static void Main()
         {
             var input = int.Parse(Console.ReadLine());
             PrintPattern(input - 1);
@@ -85,4 +85,3 @@ namespace Pattern
         }
     }
 }
-

@@ -93,9 +93,15 @@ namespace DogePlus
                 }
             }
 
+            if (K > 0)
+            {
+                Console.WriteLine(matrix[R - 1, C - 1]* matrix[R - 1, C - 1]);
+            }
+            else
+            {
+                Console.WriteLine(matrix[R - 1, C - 1]);
+            }
 
-
-            Console.WriteLine(matrix[R - 1, C - 1]);
             PrintMatrix(matrix);
         }
 

@@ -25,6 +25,11 @@
             }
         }
 
+        public void Add(T item)
+        {
+            this.items.Add(item);
+        }
+
         public void Sort(ISorter<T> sorter)
         {
             sorter.Sort(this.items);
@@ -32,17 +37,58 @@
 
         public bool LinearSearch(T item)
         {
-            throw new NotImplementedException();
+            var len = this.items.Count;
+            for (int i = 0; i < len; i++)
+            {
+                if (this.items[i].Equals(item))
+                {
+                    return true;
+                }
+            }
+
+            return false;
         }
 
         public bool BinarySearch(T item)
         {
-            throw new NotImplementedException();
+            int from = 0;
+            int to = this.items.Count - 1;
+            var list = new List<T>(this.Items);
+            list.Sort();
+
+            while (from <= to)
+            {
+                int midle = (from + to) / 2;
+
+                if (list[midle].CompareTo(item) < 0)
+                {
+                    from = midle + 1;
+                }
+                else if (list[midle].CompareTo(item) > 0)
+                {
+                    to = midle - 1;
+                }
+                else
+                {
+                    return true;
+                }
+            }
+
+            return false;
         }
 
         public void Shuffle()
         {
-            throw new NotImplementedException();
+            var list = this.items;
+            Random random = new Random();
+            int n = list.Count;
+            for (int i = 0; i < n; i++)
+            {
+                int r = i + (int)(random.NextDouble() * (n - i));
+                T t = list[r];
+                list[r] = list[i];
+                list[i] = t;
+            }
         }
 
         public void PrintAllItemsOnConsole()

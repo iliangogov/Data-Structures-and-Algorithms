@@ -9,43 +9,62 @@
         {
             Console.WriteLine("Enter a number:");
             string currentNumber = Console.ReadLine();
-            var sequence = new List<int>();
+            //var sequence = new List<int>();
+            var sequence = new Dictionary<int, int>();
 
             while (currentNumber != string.Empty)
             {
                 Console.WriteLine("Enter a number:");
                 int parsedNumber = int.Parse(currentNumber);
-                sequence.Add(parsedNumber);
-                currentNumber = Console.ReadLine();
-            }
-
-            sequence.Sort();
-
-            int prevNum = sequence[0];
-            int equalSequenceCount = 1;
-            int count = 1;
-
-            for (int i = 1; i < sequence.Count; i++)
-            {
-                int nextNum = sequence[i];
-                if (nextNum == prevNum)
+                if (!sequence.ContainsKey(parsedNumber))
                 {
-                    count++;
+                    sequence.Add(parsedNumber, 1);
                 }
                 else
                 {
-                    count = 1;
+                    sequence[parsedNumber] += 1;
                 }
-
-                if (count > equalSequenceCount)
-                {
-                    equalSequenceCount = count;
-                }
-
-                prevNum = nextNum;
+               
+                currentNumber = Console.ReadLine();
             }
 
-            Console.WriteLine(equalSequenceCount);
+            int maxOccurances = 0;
+            foreach(int val in sequence.Values)
+            {
+                if (val > maxOccurances)
+                {
+                    maxOccurances = val;
+                }
+            }
+
+            Console.WriteLine(maxOccurances);
+            //sequence.Sort();
+
+            //int prevNum = sequence[0];
+            //int equalSequenceCount = 1;
+            //int count = 1;
+
+            //for (int i = 1; i < sequence.Count; i++)
+            //{
+            //    int nextNum = sequence[i];
+            //    if (nextNum == prevNum)
+            //    {
+            //        count++;
+            //    }
+            //    else
+            //    {
+            //        count = 1;
+            //    }
+
+            //    if (count > equalSequenceCount)
+            //    {
+            //        equalSequenceCount = count;
+            //    }
+
+            //    prevNum = nextNum;
+            //}
+
+            // Console.WriteLine(equalSequenceCount);
         }
     }
 }
